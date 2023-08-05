@@ -11,3 +11,69 @@
     text-decoration: none; /* Remove underline from links */
     color: #333; /* Set link color */
   }
+
+  /* User Profile Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .user-profile {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 40px auto;
+  }
+  
+  .profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-name {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .profile-bio {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .profile-details {
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding-top: 10px;
+  }
+  
+  .detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .detail i {
+    margin-right: 10px;
+    color: #888;
+  }
+  
+  .detail-text {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .detail-text a {
+    color: #007bff;
+    text-decoration: none;
+  }
