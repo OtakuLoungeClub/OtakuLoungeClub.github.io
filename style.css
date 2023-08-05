@@ -1,0 +1,13 @@
+.social-links {
+    display: flex; /* Display links in a row */
+    justify-content: center; /* Center the links horizontally */
+    gap: 20px; /* Add spacing between links */
+    margin-top: 20px; /* Add some top margin for spacing */
+  }
+
+
+  /* Style the links */
+  .social-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set link color */
+  }
