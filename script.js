@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const loadingBar = document.querySelector(".loading-bar");
-    const content = document.getElementById("content");
+    const mainContent = document.getElementById("main-content");
     const loadingScreen = document.getElementById("loading-screen");
 
     // Simulate loading process
@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => {
         loadingScreen.style.opacity = 0;
         loadingScreen.style.pointerEvents = "none";
-        content.classList.remove("hidden");
+        mainContent.classList.remove("hidden");
+        document.body.style.overflow = 'auto'; // Allow scrolling after loading
     }, 2100);
 });
