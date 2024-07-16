@@ -8,99 +8,108 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
+    <div id="loading-screen">
+        <div class="loading-bar-container">
+            <div class="loading-bar"></div>
+        </div>
+        <p>Loading...</p>
+    </div>
+
+    <div id="content" class="hidden">
+        <header>
+            <div class="logo">
+                <h1>Otaku Lounge Club</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#content">Content</a></li>
+                    <li><a href="#blog">Blog/News</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home" class="home">
+            <div class="hero">
+                <h2>Welcome to Otaku Lounge Club</h2>
+                <p>Your one-stop destination for all things anime and manga.</p>
+                <a href="#content" class="btn">Explore Content</a>
+            </div>
+        </section>
+
+        <section class="announcement">
             <h1>Otaku Lounge Club</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#content">Content</a></li>
-                <li><a href="#blog">Blog/News</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+            <p>An Otaku community coming soon!</p>
+            <a href="user-profile.html" class="profile-link">User Profile Testing Landing Page</a>
+            <div class="social-links">
+                <!-- TikTok link using Font Awesome TikTok icon -->
+                <a href="https://www.tiktok.com/@otakuloungeclub" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-tiktok"></i> Follow us on TikTok
+                </a>
 
-    <section id="home" class="home">
-        <div class="hero">
-            <h2>Welcome to Otaku Lounge Club</h2>
-            <p>Your one-stop destination for all things anime and manga.</p>
-            <a href="#content" class="btn">Explore Content</a>
-        </div>
-    </section>
+                <!-- Instagram link using Font Awesome Instagram icon -->
+                <a href="https://www.instagram.com/otakulounge.club" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-instagram"></i> Follow us on Instagram
+                </a>
+            </div>
+        </section>
 
-    <section class="announcement">
-        <h1>Otaku Lounge Club</h1>
-        <p>An Otaku community coming soon!</p>
-        <a href="user-profile.html" class="profile-link">User Profile Testing Landing Page</a>
-        <div class="social-links">
-            <!-- TikTok link using Font Awesome TikTok icon -->
-            <a href="https://www.tiktok.com/@otakuloungeclub" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-tiktok"></i> Follow us on TikTok
-            </a>
+        <section id="content" class="content">
+            <h2>Latest Content</h2>
+            <div class="content-grid">
+                <!-- Content cards -->
+                <div class="card">
+                    <img src="content1.jpg" alt="Content 1">
+                    <h3>Anime Reviews</h3>
+                    <p>Get the latest reviews on the newest anime series.</p>
+                </div>
+                <div class="card">
+                    <img src="content2.jpg" alt="Content 2">
+                    <h3>Manga Recommendations</h3>
+                    <p>Discover manga recommendations from fellow otakus.</p>
+                </div>
+                <div class="card">
+                    <img src="content3.jpg" alt="Content 3">
+                    <h3>Character Analysis</h3>
+                    <p>In-depth analysis of your favorite anime characters.</p>
+                </div>
+            </div>
+        </section>
 
-            <!-- Instagram link using Font Awesome Instagram icon -->
-            <a href="https://www.instagram.com/otakulounge.club" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-instagram"></i> Follow us on Instagram
-            </a>
-        </div>
-    </section>
+        <section id="blog" class="blog">
+            <h2>Latest Blog/News</h2>
+            <div class="blog-grid">
+                <!-- Blog posts -->
+                <div class="post">
+                    <h3>Upcoming Anime in 2024</h3>
+                    <p>Stay updated with the upcoming anime releases this year.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="post">
+                    <h3>Top 10 Manga to Read</h3>
+                    <p>Check out our list of the top 10 must-read manga.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="post">
+                    <h3>Anime Conventions 2024</h3>
+                    <p>Get the latest updates on anime conventions happening near you.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
 
-    <section id="content" class="content">
-        <h2>Latest Content</h2>
-        <div class="content-grid">
-            <!-- Content cards -->
-            <div class="card">
-                <img src="content1.jpg" alt="Content 1">
-                <h3>Anime Reviews</h3>
-                <p>Get the latest reviews on the newest anime series.</p>
+        <footer>
+            <p>&copy; 2024 Otaku Lounge Club. All rights reserved.</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
-            <div class="card">
-                <img src="content2.jpg" alt="Content 2">
-                <h3>Manga Recommendations</h3>
-                <p>Discover manga recommendations from fellow otakus.</p>
-            </div>
-            <div class="card">
-                <img src="content3.jpg" alt="Content 3">
-                <h3>Character Analysis</h3>
-                <p>In-depth analysis of your favorite anime characters.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="blog" class="blog">
-        <h2>Latest Blog/News</h2>
-        <div class="blog-grid">
-            <!-- Blog posts -->
-            <div class="post">
-                <h3>Upcoming Anime in 2024</h3>
-                <p>Stay updated with the upcoming anime releases this year.</p>
-                <a href="#">Read More</a>
-            </div>
-            <div class="post">
-                <h3>Top 10 Manga to Read</h3>
-                <p>Check out our list of the top 10 must-read manga.</p>
-                <a href="#">Read More</a>
-            </div>
-            <div class="post">
-                <h3>Anime Conventions 2024</h3>
-                <p>Get the latest updates on anime conventions happening near you.</p>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Otaku Lounge Club. All rights reserved.</p>
-        <div class="social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
