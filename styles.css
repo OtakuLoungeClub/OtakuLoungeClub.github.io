@@ -1,79 +1,198 @@
-.social-links {
-    display: flex; /* Display links in a row */
-    justify-content: center; /* Center the links horizontally */
-    gap: 20px; /* Add spacing between links */
-    margin-top: 20px; /* Add some top margin for spacing */
-  }
-
-
-  /* Style the links */
-  .social-links a {
-    text-decoration: none; /* Remove underline from links */
-    color: #333; /* Set link color */
-  }
-
-  /* User Profile Styles */
-  body {
+body {
+    margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .user-profile {
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 400px;
-    margin: 40px auto;
-  }
-  
-  .profile-header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .profile-avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  .profile-name {
-    font-size: 24px;
-    margin: 10px 0;
-  }
-  
-  .profile-bio {
-    font-size: 14px;
-    color: #666;
-  }
-  
-  .profile-details {
-    border-top: 1px solid #ddd;
-    margin-top: 20px;
-    padding-top: 10px;
-  }
-  
-  .detail {
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: #555;
+    border-radius: 4px;
+}
+
+.home {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 100vh;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .detail i {
-    margin-right: 10px;
-    color: #888;
-  }
-  
-  .detail-text {
-    font-size: 14px;
-    color: #333;
-  }
-  
-  .detail-text a {
-    color: #007bff;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.home .hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.home .hero .btn {
+    background: #ff4500;
+    color: #fff;
+    padding: 1rem 2rem;
     text-decoration: none;
-  }
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.home .hero .btn:hover {
+    background: #ff6347;
+}
+
+.announcement {
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.announcement h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.announcement p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.announcement .profile-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    background: #ff4500;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.announcement .profile-link:hover {
+    background: #ff6347;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff4500;
+}
+
+section {
+    padding: 2rem 5%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.content-grid,
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card,
+.post {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card h3,
+.post h3 {
+    margin-top: 1rem;
+}
+
+.card p,
+.post p {
+    color: #666;
+}
+
+.post a {
+    color: #ff4500;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: color 0.3s ease;
+}
+
+.post a:hover {
+    color: #ff6347;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .social a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #ff4500;
+}
